@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>ToDoList App</h1>
+        
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter task...">
+            <input type="text" id="categoryInput" placeholder="Enter category...">
+            <select id="priorityInput">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <div class="filters">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+            </select>
+            <select id="priorityFilter">
+                <option value="all">All Priorities</option>
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+        </div>
+
+        <div class="tasks-container">
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="actions">
+            <button id="downloadPdfBtn">Download Tasks as PDF</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
